@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend align = "center">
+                <h2>Personal</h2>
+            </legend>
+            <label for = "fn">First Name: </label> <input type = "text" required placeholder="Enter First Name" id = "fn"><br><br>
+            <label for = "ln">Last Name: </label> <input type = "text" required placeholder="Enter Last Name" id = "ln"><br><br>
+            <table>
+                <tr>
+            <td><label>Gender: </label></td>
+            <td> <input type = "radio" value= "Male" id = "m"> <label for = "m">Male</label></td></tr>
+            <tr>
+                <td></td>
+                <td>
+            <input type = "radio" value= "Female" id = "f"> <label for = "f">Female</label></td>
+        </tr>
+        </table><br>
+        <label for = "colour">Color: </label><input type = "color" id = "colour"><br><br>
+        <label for = "bd">Birthdate: </label><input id = "bd" type = "date"> <br><br>
+        <label for = "prf">Profile: </label><input id= "prf" type = "file">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend align = "center"><h2>Education</h2></legend>
+            <table>
+                <tr>
+                    <td><label>Highest Education: </label></td>
+                    <td><input type = "radio" value = "SSC"><label>SSC</label></td>
+                </tr>
+                <tr><td></td>
+                <td>
+                    <input type = "radio" value = "HSC"><label>HSC</label>
+                </td></tr>
+                <tr><td></td>
+                    <td>
+                        <input type = "radio" value = "BE"><label>BE</label>
+                    </td></tr>
+                    <tr><td></td>
+                        <td>
+                            <input type = "radio" value = "ME"><label>ME</label>
+                        </td></tr>
+                        <tr><td></td>
+                            <td>
+                                <input type = "radio" value = "PHD"><label>PHD</label>
+                            </td></tr>
+            </table>
+        </fieldset>
+        <br>
+        <center><a href="FormTask.html"><input type = "button" value = "Submit"></a>&nbsp;&nbsp;
+        <input type = "reset" value = "Reset"></center>
+</body>
+</html>
