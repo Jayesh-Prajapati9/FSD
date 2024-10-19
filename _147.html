@@ -1,0 +1,68 @@
+<html>
+    <body>
+        <hr>
+        <h1 align="center">Food Review</h1>
+        <hr>
+        <form method="get">
+             <fieldset>
+                <legend>Customer Details</legend>
+                <br>
+                <b>Name: </b> <input type="text" placeholder="Enter your name">
+                <br>
+                <b>Number: </b> <input type="number">
+                <br>
+                <b>Email: </b> <input type="email" placeholder="example@gmail.com">
+                <br>
+                <b>Pizza Name: </b> <input type="checkbox" name = "c1" value="Simple veg">Simple Veg 
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name ="c2" value="7 Cheese">7 Cheeze
+                <br>
+                <b>Outlet City: </b> <select name="" id="">
+                    <option value="" selected diabled hidden>--List Of Area--</option>
+                    <OPtion>Ahmedabad</OPtion>
+                    <OPtion>Surendranagar</OPtion>
+                    <OPtion>Rajkot</OPtion>
+                </select>
+                <br>
+                <b>Order Date: </b><input type="date">
+                <br>
+                <b>Comment: </b> <textarea name="" id="" cols="10" rows="5"></textarea>
+             </fieldset>
+             <fieldset>
+                <legend>Scale Ordered Pizza</legend>
+                <table rules="all" >
+                    <th>Scale</th>
+                    <th>Good</th>
+                    <th>Average</th>
+                    <th>Bad</th>
+                    <tr>
+                        <td>Quality</td>
+                        <td><input type="radio" name="r1" value="Good" checked></td>
+                        <td><input type="radio" name="r1" value="Average" ></td>
+                        <td><input type="radio" name="r1" value="Bad" ></td>
+                    </tr>
+                    <tr>
+                        <td>Quantity</td>
+                        <td><input type="radio" name="r2" value="Good" checked></td>
+                        <td><input type="radio" name="r2" value="Average" ></td>
+                        <td><input type="radio" name="r2" value="Bad" ></td>
+                    </tr>
+                    <tr>
+                        <td>Freshness</td>
+                        <td><input type="radio" name="r3" value="Good" ></td>
+                        <td><input type="radio" name="r3" value="Average" checked></td>
+                        <td><input type="radio" name="r3" value="Bad" ></td>
+                    </tr>
+                    <tr>
+                        <td>Overall Rating</td>
+                        <td colspan="3"> 0 <input type="range" minlength="0" maxlength="10">10</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" align="center"><input type="submit"></td>
+                    </tr>
+                </table>
+                
+             </fieldset>
+        </form>
+    </body>
+</html>
