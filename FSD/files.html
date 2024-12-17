@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .leftdiv {
+        height: 200px;
+        width: 30%;
+        float: left;
+        border: 2px solid salmon;
+        border-radius: 20px;
+      }
+      .rightdiv {
+        height: 200px;
+        width: 70%;
+        float: left;
+        border: 2px solid salmon;
+        border-radius: 20px;
+      }
+      .progress {
+        width: 70%;
+        margin: 25px;
+      }
+      .text {
+        padding-left: 55px;
+        margin: 14px;
+        font-size: large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: italic;
+      }
+      .progress-bar{
+        color: black;
+        font-size: medium;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="leftdiv">
+      <div class="text">Files <button class="btn btn-warning"></button></div>
+      <div class="text">Apps <button class="btn btn-danger"></button></div>
+      <div class="text">Media <button class="btn btn-info"></button></div>
+      <div class="text">
+        Free Memory <button class="btn btn-success"></button>
+      </div>
+    </div>
+    <div class="rightdiv">
+      <div class="progress">
+        <div
+          class="progress-bar progress-bar-animated progress-bar-striped bg bg-warning"
+          style="width: 50%"
+        >50%</div>
+      </div>
+      <div class="progress">
+        <div
+          class="progress-bar progress-bar-animated progress-bar-striped bg bg-danger"
+          style="width: 70%"
+        >70%</div>
+      </div>
+      <div class="progress">
+        <div
+          class="progress-bar progress-bar-animated progress-bar-striped bg bg-info"
+          style="width: 30%"
+        >30%</div>
+      </div>
+      <div class="progress">
+        <div
+          class="progress-bar progress-bar-animated progress-bar-striped bg bg-success"
+          style="width: 10%"
+        >10%</div>
+      </div>
+    </div>
+  </body>
+</html>

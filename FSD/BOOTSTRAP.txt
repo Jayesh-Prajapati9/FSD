@@ -1,0 +1,21 @@
+ ------GRID SYSTEM------ 
+
+1) col (extra small <576px)
+2) col-sm (small >=576px)
+3) col-md (medium >=768px)
+4) col-lg (large>=980px)
+5) col-xl (extra large >=1200px)
+=> Used to build flex box upto 12 col across the page   
+=> Responsive
+=> Columns will arrange automatically depending on screen size
+
+
+
+
+
+
+
+
+
+
+
