@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        img {
+            height: 200px;
+            width: 300px;
+            border: 2px solid red;
+            padding: 3px;
+            transition: 2s all;
+        }
+
+        img:hover {
+            transform: scale(1.15, 1.15);
+            padding: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            height: auto;
+            width: auto;
+            color: black;
+            border: 5px solid black;
+            padding: 2px;
+            background-color: white;
+        }
+
+        h1:hover {
+            background-color: black;
+            color: white;
+            border: 5px solid white;
+        }
+        #text{
+            text-align: center;
+            font-weight: bolder;
+            font-style: italic;
+        }
+        body{
+            background-color: black;
+        }
+        #advertisement{
+            background-color: red;
+        }
+        footer{
+            font-weight: bold;
+            font-size: large;
+            color: black;
+            animation-name: advertise;
+            animation-iteration-count: infinite;
+            animation-duration: 11s;
+        }
+        @keyframes advertise {
+            from{
+                transform: translate(1600px);
+            }
+            to{
+                transform: translate(-150px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 > Online Shopping </h1>
+    <div class="row">
+        <div class="col"><img src="ss.png" alt=""></div>
+        <div class="col"><img src="ss.png" alt=""></div>
+        <div class="col"><img src="ss.png" alt=""></div>
+        <div class="col"><img src="ss.png" alt=""></div>
+    </div>
+    <br>
+    <div class="row">
+        <div id="text" class="col bg-danger text-warning">Milk1</div>
+        <div id="text" class="col bg-warning text-danger">Milk2</div>
+        <div id="text" class="col bg-success text-dark">Milk3</div>
+        <div id="text" class="col bg-info text-secondary">Milk4</div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col" align="center"><img src="ss.png" alt=""></div>
+        <div class="col" align="center"><img src="ss.png" alt=""></div>
+        <div class="col" align="center"><img src="ss.png" alt=""></div>
+        <div class="col" align="center"><img src="ss.png" alt=""></div>
+    </div>
+    <br>
+    <div class="row">
+        <div id="text" class="col bg-danger text-warning">Panner1</div>
+        <div id="text" class="col bg-warning text-danger">Panner2</div>
+        <div id="text" class="col bg-success text-dark">Panner3</div>
+        <div id="text" class="col bg-info text-secondary">Panner4</div>
+    </div>
+    <div id="advertisement"><footer>Sale sale Sale</footer></div>
+    
+</body>
+
+</html>
