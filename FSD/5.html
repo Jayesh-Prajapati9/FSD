@@ -1,0 +1,30 @@
+<!-- write html form of accepting an integer having 4 digits . input should not accept characters of letters and special symbol -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            pat=/^\d+$/;
+            u=document.getElementById("int").value;
+            if(u.length!=4){
+                alert("Must have length 4 ")
+            }
+            if(!(pat.test(u))){
+                alert("only enter 4 digit in input")
+            }
+            else{
+                alert("Perfect Input")
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="" id="int">
+        <input type="submit" onsubmit="fun()">
+    </form>
+</body>
+</html>

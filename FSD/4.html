@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .form-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #333;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    .error {
+      color: red;
+      font-size: 12px;
+    }
+  </style>
+  <script>
+    function validateForm() {
+      // Get the username and password values
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      let errorMessages = [];
+
+      // Check if username is empty
+      if (username.trim() === '') {
+        errorMessages.push('Username cannot be blank');
+      }
+
+      // Check if password is empty
+      if (password.trim() === '') {
+        errorMessages.push('Password cannot be blank');
+      }
+
+      // Check if password length is between 6 to 12 characters
+      if (password.length < 6 || password.length > 12) {
+        errorMessages.push('Password must be between 6 and 12 characters');
+      }
+
+      // Check if username starts with '_', '@' or a number
+      const usernamePattern = /^[0-9_@]/;
+      if (usernamePattern.test(username.charAt(0))) {
+        errorMessages.push('Username should not start with "_", "@", or any number');
+      }
+
+      // Display errors if any, otherwise submit the form
+      const errorContainer = document.getElementById('error-messages');
+      errorContainer.innerHTML = ''; // Clear previous errors
+
+      if (errorMessages.length > 0) {
+        errorMessages.forEach(message => {
+          const errorElement = document.createElement('div');
+          errorElement.classList.add('error');
+          errorElement.textContent = message;
+          errorContainer.appendChild(errorElement);
+        });
+        return false;
+      } else {
+        alert('Form submitted successfully!');
+        return true;
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Form Validation</h2>
+    <form onsubmit="return validateForm()">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+      
+      <div id="error-messages"></div>
+      
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+</body>
+</html>
